@@ -1,0 +1,127 @@
+# Slide 1: Title Slide
+- **Exam Hall Allocation System**
+
+# Slide 2: Outline
+- Introduction to the system
+- Problem Statement
+- Project Objectives
+- System Requirements
+- Database Overview
+- Core Features
+- Future Enhancements
+- Conclusion
+
+# Slide 3: Abstract
+- The system automates exam hall allocation management.
+- Built using Java Swing for UI, JDBC for database connectivity, and MySQL for data storage.
+- Aims to reduce manual errors and improve efficiency.
+
+# Slide 4: Introduction
+- Exam allocation is crucial for educational institutions.
+- Need for a systematic approach to avoid clashes.
+- Integration of multiple stakeholders: Students, Invigilators, Administrators.
+
+# Slide 5: Problem Statement
+- Manual allocation methods lead to errors and inefficiencies.
+- Difficulty in managing last-minute changes in student schedules.
+- Ensures fair allocation based on hall capacities.
+
+# Slide 6: Objectives & Functional Requirements
+- Automate allocation process to minimize manual interventions.
+- Validate user credentials and restrict unauthorized access.
+- Provide a user-friendly interface for all stakeholders.
+
+# Slide 7: System Requirements
+- **Software**: Java SE, MySQL, JDBC.
+- **Hardware**: Minimum 4GB RAM, i5 Processor.
+- **OS**: Windows/Linux.
+
+# Slide 8: Database Overview
+- Utilizes MySQL for relational database management.
+- Supports multiple tables for entity management.
+- Ensures data integrity and maintains relationships.
+
+# Slide 9: Core Database Tables
+- **Student Table**: Stores student information (PK: student_id).
+- **Hall Table**: Contains details of available halls (PK: hall_id).
+- **Exam Table**: Information regarding exams scheduled (PK: exam_id).
+
+# Slide 10: Exam and Hall Tables
+- **Exam Table**: Includes exam_id, subject, schedule, linked to Student Table (FK).
+- **Hall Table**: Properties of halls such as capacity and type.
+
+# Slide 11: Allocation and Invigilator Tables
+- **Allocation Table**: Maps students to halls based on availability (PK: allocation_id).
+- **Invigilator Table**: Details invigilator assignments (FK linked to Hall Table).
+
+# Slide 12: Layered Architecture
+- **UI Layer**: Handles user interactions.
+- **Service Layer**: Contains business logic and decision making.
+- **DAO Layer**: Data access objects for database interaction.
+- **Model Layer**: Models to represent data.
+- **Validation Layer**: Contains validation logic for data integrity.
+- **FSM Layer**: Manages states in user processes.
+- **Database Layer**: Access point for data storage.
+- **Import/Export Layer**: Facilitates data interchange.
+
+# Slide 13: Source Code Structure
+- Organized by layers as described in Layered Architecture.
+- Each layer contains specific packages for modularity and maintenance.
+- Followed naming conventions for better code readability.
+
+# Slide 14: Functional Modules Overview
+- **User Management**: Handles user login and profiles.
+- **Exam Management**: Manages exam schedules and allocations.
+- **Hall Management**: Maintains hall capacities and details.
+
+# Slide 15: System Workflow
+- Login -> Dashboard -> Module Selection -> Operation -> Logout.
+- Flowchart representation of user interactions.
+- Depicts a seamless navigation through functionalities.
+
+# Slide 16: Login Module
+- Validates user credentials against the database.
+- Provides secure session management.
+- User roles segmentation for security.
+- [Login Screen] Screenshot placeholder.
+
+# Slide 17: Dashboard Summary
+- Displays key metrics and status of allocations.
+- Offers quick access to various functionality modules.
+- Visual indicators for pending actions and alerts.
+- [Dashboard] Screenshot placeholder.
+
+# Slide 18: Student Management / Subject Management / Hall Management
+- Manages CRUD operations for students and subjects.
+- Facilitates hall details management based on capacity.
+- Enables search and filter functionalities for efficiency.
+
+# Slide 19: Exam Management & Allocation
+- Enables exam setups and student allocation.
+- Supports batch processing for large data sets.
+- [Student Panel] Screenshot placeholder.
+
+# Slide 20: Invigilator Allocation / Import / Export
+- Allocates invigilators to exams based on availability.
+- Supports CSV-based data import/export.
+- [Exam Panel] Screenshot placeholder.
+
+# Slide 21: Technical Features
+- Utilizes DAO for database operations.
+- Implements Validators to ensure data quality.
+- Incorporates FSM for dynamic process handling.
+- Includes BatchAllocator for effective student distribution.
+
+# Slide 22: Future Enhancements
+- Expansion of integration capabilities with other systems.
+- Improved user interface with responsive design.
+- Implementation of AI for smarter allocation.
+
+# Slide 23: Conclusion
+- The system significantly reduces allocation errors and improves efficiency.
+- Supports dynamic management of exam resources.
+- Ensures compliance with institutional policies.
+
+# Slide 24: Thank You
+- Questions and further information.
+- [Import/Export Panel] Screenshot placeholder.
